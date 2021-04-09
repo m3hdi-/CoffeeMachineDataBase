@@ -1,0 +1,10 @@
+﻿CREATE TABLE [dbo].[Dose]
+(
+	[Id] Int NOT NULL PRIMARY KEY IDENTITY, 
+    [Type] NVARCHAR(50) NOT NULL, 
+    [isMug] BIT NOT NULL, 
+    [isBadge] BIT NULL DEFAULT 0,
+    [CreatedAt] DATETIME NOT NULL DEFAULT GETDATE(), 
+    [User] NVARCHAR(50) NOT NULL
+
+)
